@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sharing Scooters</title>
+    <h1>Sharing Scooters</h1>
+</head>
+<body>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <button onclick="addUser()">Add User</button>
+    <p id="para1"></p>
+
+    <button onclick="showReservationInfo()">Show Reservation Info</button>
+    <p id="para2"></p>
+
+    <button onclick="showReservationInfo()">Delete Reservation</button>
+    <p id="para3"></p>
+
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="startdate">tart Date:</label><br>
+    <input type="text" id="startdate" name="startdate"><br>
+    <label for="starttime">Start Time:</label><br>
+    <input type="text" id="starttime" name="starttime"><br>
+    <label for="numberofhours">Number of Hours:</label><br>
+    <input type="text" id="numberofhours" name="numberofhours"><br>
+
+    <div id="outputField"></div>
+    <button onclick="createReservation()">Create Reservation</button>
+    <p id="para4"></p>
+
+    <button onclick="showReservations()">Show All Reservations</button>
+    <p id="para5"></p>
+
+    <table style="width:100%">
+        <tr>
+          <th>User Name</th>
+          <th>Start Date</th>
+          <th>Start Time</th>
+          <th>Number of Hours</th>
+        </tr>
+      </table>
+    <script src="client.js" defer></script>
+</body>
+</html>
